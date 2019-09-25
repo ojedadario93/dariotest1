@@ -32,6 +32,7 @@ public class AdminMenu_jsp extends HttpJspBase {
 
   public static String loadDriver () {
     String sErr = "";
+    String email = "public@checkmarx.com";
     try {
       java.sql.DriverManager.registerDriver((java.sql.Driver)(Class.forName(DBDriver).newInstance()));
     }
