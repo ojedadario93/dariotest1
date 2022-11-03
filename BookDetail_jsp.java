@@ -548,7 +548,6 @@ static final String sFileName = "BookDetail.jsp";
 
       if ( bPK &&  ! (sAction.equals("insert") && "Detail".equals(sForm))) {
 
-        sSQL = mySQLsanitizer(sSQL);
         // Open recordset
         rs = openrs( stat, sSQL);
         rs.next();
@@ -808,6 +807,7 @@ fldproduct_url="Review this book on Amazon.com";
 
       if ( bPK &&  ! (sAction.equals("insert") && "Order".equals(sForm))) {
 
+        sSQL = mySQLsanitizer(sSQL);
         // Open recordset
         rs = openrs( stat, sSQL);
         rs.next();
