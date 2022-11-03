@@ -1042,6 +1042,7 @@ sSQL = "update items set rating=rating+" + getParam(request, "rating") + ", rati
 
       if ( bPK &&  ! (sAction.equals("insert") && "Rating".equals(sForm))) {
 
+        sSQL = mySQLsanitizer(sSQL);
         // Open recordset
         rs = openrs( stat, sSQL);
         rs.next();
