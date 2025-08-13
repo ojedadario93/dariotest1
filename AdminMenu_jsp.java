@@ -21,6 +21,7 @@ public class AdminMenu_jsp extends HttpJspBase {
   static final int adNumber = 3;
   static final int adSearch_ = 4;
   static final int ad_Search_ = 5;
+  static final int ad_Search_ = 6;
   static final String appPath   ="/";
 
 //Database connection string
@@ -534,3 +535,4 @@ if ( conn != null ) conn.close();
     }
   }
 }
+
